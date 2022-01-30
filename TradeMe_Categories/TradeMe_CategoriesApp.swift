@@ -11,7 +11,7 @@ import SwiftUI
 struct TradeMe_CategoriesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoryListView()
         }
     }
 }
