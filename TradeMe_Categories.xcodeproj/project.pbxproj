@@ -30,6 +30,8 @@
 		9B6EB80F27A22AC400C19A32 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB80E27A22AC400C19A32 /* CategoryListViewModel.swift */; };
 		9B6EB81327A2516500C19A32 /* categories_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B6EB81027A2419200C19A32 /* categories_test.json */; };
 		9BD56F4E27A6C192009CA366 /* SubCategoryNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56F4D27A6C192009CA366 /* SubCategoryNodeView.swift */; };
+		9BD56F4F27A735B5009CA366 /* OAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D92827A6377800971A0C /* OAuthHelper.swift */; };
+		9BD56F5027A73713009CA366 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D92B27A64A7300971A0C /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -382,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD56F5027A73713009CA366 /* Credentials.swift in Sources */,
 				9B6EB7ED27A20D5C00C19A32 /* TradeMe_CategoriesTests.swift in Sources */,
+				9BD56F4F27A735B5009CA366 /* OAuthHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
