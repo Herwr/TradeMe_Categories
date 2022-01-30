@@ -32,6 +32,12 @@
 		9BD56F4E27A6C192009CA366 /* SubCategoryNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56F4D27A6C192009CA366 /* SubCategoryNodeView.swift */; };
 		9BD56F4F27A735B5009CA366 /* OAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D92827A6377800971A0C /* OAuthHelper.swift */; };
 		9BD56F5027A73713009CA366 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D92B27A64A7300971A0C /* Credentials.swift */; };
+		9BD56F5227A7471E009CA366 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56F5127A7471E009CA366 /* APIManagerTests.swift */; };
+		9BD56F5327A74898009CA366 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB80827A20EE000C19A32 /* ApiManager.swift */; };
+		9BD56F5427A7497B009CA366 /* ApiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D8F627A357F500971A0C /* ApiInterface.swift */; };
+		9BD56F5527A749A0009CA366 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB80B27A2204600C19A32 /* Category.swift */; };
+		9BD56F5627A749A4009CA366 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D8FA27A4181D00971A0C /* SearchResult.swift */; };
+		9BD56F5727A749CA009CA366 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D8FC27A41A6A00971A0C /* Listing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,7 @@
 		9B6EB80E27A22AC400C19A32 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		9B6EB81027A2419200C19A32 /* categories_test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories_test.json; sourceTree = "<group>"; };
 		9BD56F4D27A6C192009CA366 /* SubCategoryNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryNodeView.swift; sourceTree = "<group>"; };
+		9BD56F5127A7471E009CA366 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6EB7EC27A20D5C00C19A32 /* OAuthHelperTests.swift */,
+				9BD56F5127A7471E009CA366 /* APIManagerTests.swift */,
 			);
 			path = TradeMe_CategoriesTests;
 			sourceTree = "<group>";
@@ -384,9 +392,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD56F5227A7471E009CA366 /* APIManagerTests.swift in Sources */,
+				9BD56F5727A749CA009CA366 /* Listing.swift in Sources */,
 				9BD56F5027A73713009CA366 /* Credentials.swift in Sources */,
+				9BD56F5627A749A4009CA366 /* SearchResult.swift in Sources */,
+				9BD56F5427A7497B009CA366 /* ApiInterface.swift in Sources */,
+				9BD56F5327A74898009CA366 /* ApiManager.swift in Sources */,
 				9B6EB7ED27A20D5C00C19A32 /* OAuthHelperTests.swift in Sources */,
 				9BD56F4F27A735B5009CA366 /* OAuthHelper.swift in Sources */,
+				9BD56F5527A749A0009CA366 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

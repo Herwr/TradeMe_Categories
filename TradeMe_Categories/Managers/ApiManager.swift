@@ -14,7 +14,7 @@ struct ApiManager {
     static let shared = ApiManager()
     private init() {}
     
-    private enum EndPoint {
+    enum EndPoint {
         case categories(String, Int)
         case search(String, Int)
 
