@@ -22,7 +22,7 @@
 		9B6EB7DC27A20D5600C19A32 /* TradeMe_CategoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB7DB27A20D5600C19A32 /* TradeMe_CategoriesApp.swift */; };
 		9B6EB7E027A20D5B00C19A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6EB7DF27A20D5B00C19A32 /* Assets.xcassets */; };
 		9B6EB7E327A20D5B00C19A32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6EB7E227A20D5B00C19A32 /* Preview Assets.xcassets */; };
-		9B6EB7ED27A20D5C00C19A32 /* TradeMe_CategoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB7EC27A20D5C00C19A32 /* TradeMe_CategoriesTests.swift */; };
+		9B6EB7ED27A20D5C00C19A32 /* OAuthHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB7EC27A20D5C00C19A32 /* OAuthHelperTests.swift */; };
 		9B6EB7F727A20D5C00C19A32 /* TradeMe_CategoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB7F627A20D5C00C19A32 /* TradeMe_CategoriesUITests.swift */; };
 		9B6EB7F927A20D5C00C19A32 /* TradeMe_CategoriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB7F827A20D5C00C19A32 /* TradeMe_CategoriesUITestsLaunchTests.swift */; };
 		9B6EB80927A20EE000C19A32 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EB80827A20EE000C19A32 /* ApiManager.swift */; };
@@ -69,7 +69,7 @@
 		9B6EB7DF27A20D5B00C19A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6EB7E227A20D5B00C19A32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B6EB7E827A20D5C00C19A32 /* TradeMe_CategoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeMe_CategoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B6EB7EC27A20D5C00C19A32 /* TradeMe_CategoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMe_CategoriesTests.swift; sourceTree = "<group>"; };
+		9B6EB7EC27A20D5C00C19A32 /* OAuthHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthHelperTests.swift; sourceTree = "<group>"; };
 		9B6EB7F227A20D5C00C19A32 /* TradeMe_CategoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeMe_CategoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6EB7F627A20D5C00C19A32 /* TradeMe_CategoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMe_CategoriesUITests.swift; sourceTree = "<group>"; };
 		9B6EB7F827A20D5C00C19A32 /* TradeMe_CategoriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMe_CategoriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		9B6EB7EB27A20D5C00C19A32 /* TradeMe_CategoriesTests */ = {
 			isa = PBXGroup;
 			children = (
-				9B6EB7EC27A20D5C00C19A32 /* TradeMe_CategoriesTests.swift */,
+				9B6EB7EC27A20D5C00C19A32 /* OAuthHelperTests.swift */,
 			);
 			path = TradeMe_CategoriesTests;
 			sourceTree = "<group>";
@@ -385,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD56F5027A73713009CA366 /* Credentials.swift in Sources */,
-				9B6EB7ED27A20D5C00C19A32 /* TradeMe_CategoriesTests.swift in Sources */,
+				9B6EB7ED27A20D5C00C19A32 /* OAuthHelperTests.swift in Sources */,
 				9BD56F4F27A735B5009CA366 /* OAuthHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
