@@ -10,10 +10,7 @@ import Combine
 
 
 class ListingsViewModel : BaseViewModel {
-    var listings: [Listing]? {
-        didSet { print("Listings count: \(listings?.count ?? 0)") }
-    }
-
+    var listings: [Listing]?
     var category: Category? { didSet { fetchListings() } }
 
     override init(apiManager: ApiInterface? = nil) {
@@ -21,8 +18,6 @@ class ListingsViewModel : BaseViewModel {
     }
     
     func fetchListings() {
-        print("fetchListings() called for Category: \(category?.name ?? "* Unknown *")")
-        
         guard let id = category?.number
         else { return }
         

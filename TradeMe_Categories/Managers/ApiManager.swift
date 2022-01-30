@@ -11,7 +11,7 @@ import Combine
 
 struct ApiManager {
     // Singleton
-    static var shared = ApiManager()
+    static let shared = ApiManager()
     private init() {}
     
     private enum EndPoint {
@@ -96,28 +96,27 @@ extension ApiManager : ApiInterface {
             print("Error: Counldn't create Endpoint URL")
             return Empty<SearchResult, Error>().eraseToAnyPublisher()
         }
-        print("fetchCategoryListings endpointUrl: \(endpointUrl)")
         
         let urlRequest = OAuthHelper().urlRequestWithOAuthHeader(for: endpointUrl,
                                                                 credentials: .interview,
                                                                 headerType: .appAuthenticatedCall,
                                                                 quoteEncapsulatedValues: true)
         
-        print("urlRequest: \(String(describing: urlRequest.allHTTPHeaderFields))")
+//        print("urlRequest: \(String(describing: urlRequest.allHTTPHeaderFields))")
         
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .receive(on: apiQueue)
-            .handleEvents(receiveSubscription: { (sub) in
-                print("handleEvents sub: \(sub)")
-            }, receiveOutput: { (response) in
-                print("handleEvents response: \(response)")
-            }, receiveCompletion: { (completion) in
-                print("handleEvents completion: \(completion)")
-            }, receiveCancel: {
-                print("handleEvents cancel")
-            }, receiveRequest: { (demand) in
-                print("handleEvents demand: \(demand)")
-            })
+//            .handleEvents(receiveSubscription: { (sub) in
+//                print("handleEvents sub: \(sub)")
+//            }, receiveOutput: { (response) in
+//                print("handleEvents response: \(response)")
+//            }, receiveCompletion: { (completion) in
+//                print("handleEvents completion: \(completion)")
+//            }, receiveCancel: {
+//                print("handleEvents cancel")
+//            }, receiveRequest: { (demand) in
+//                print("handleEvents demand: \(demand)")
+//            })
             .map(\.data)
             .decode(type: SearchResult.self, decoder: jsonDecoder)
             .mapError { error -> APIError in
